@@ -1,0 +1,110 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: lightcoral;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+}
+
+nav h1 {
+    margin: 0;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col-left {
+    flex: 1 0 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.col-right {
+    flex: 1 0 60%;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.cell {
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    height: 100px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+.winner-message {
+    padding: 5px;
+    color: white;
+    background-color: rgb(54, 170, 54);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.line {
+    position: absolute;
+    height: 5px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    transform-origin: 0 0;
+}
+
+#gameImage {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    margin-right: 15px;
+}
+
+.footer {
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+a {
+    color: rgba(142, 0, 0, 0.663);
+    font-weight: 700;
+}

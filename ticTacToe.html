@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h1>TicTacToe</h1>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-left">
+                <img src="https://img.freepik.com/premium-vector/fashion-designers-making-model-dressmakers-confer-standing-near-table-looking-clothes-pattern_273625-2132.jpg?w=740" id="gameImage" alt="Game Image">
+            </div>
+            <div class="col-right">
+                <div class="player-inputs row">
+                    <div class="player col-md-6">
+                        <label for="player1">Player 1:</label>
+                        <input type="text" class="form-control" id="player1" placeholder="Enter Player 1 Name">
+                    </div>
+                    <div class="player col-md-6">
+                        <label for="player2">Player 2:</label>
+                        <input type="text" class="form-control" id="player2" placeholder="Enter Player 2 Name">
+                    </div>
+                </div>
+                <button id="startGame" class="btn btn-danger mt-3">Start Game</button>
+                <div id="winnerMessage" class="winner-message hidden">
+                    <!-- Winner message will be displayed here -->
+                </div>
+            </div>
+        </div>
+        <div id="gameBoard" class="game-board hidden">
+            <!-- Game board will be generated here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>‪‪❤︎ ‬ Created By - Harsh Sawant - <a href="https://www.behance.net/harshsawant3" target="_blank">Check My Portfolio</a></span>
+    </footer>
+
+   <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
